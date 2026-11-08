@@ -175,7 +175,7 @@ class BackEnd():
                                     break
                                 else:
                                     m_index += 1
-                                self.color.append([])
+                                    self.color.append([])
                                 self.color[len(self.color) - 1].append(local_pixel)
 
                 max_num = 0     # 监测哪个颜色块最多
