@@ -56,7 +56,7 @@ class FrontEnd():
 
             root.mainloop()
 
-    def hint(self, hint, color = "000000"):
+    def hint(self, hint, color = "#000000"):
         self.hint_txt.config(text=hint, fg=color)
         # print(hint)
 
@@ -159,7 +159,7 @@ class BackEnd():
                     k_in += 1
                     for m in range(0, self.pixel):
                         m_in += 1
-                        local_pixel = list(img.getpixel(((i %  self.length) * pixel + m, (i // self.length) * pixel + k)))
+                        local_pixel = list(img.getpixel(((i %  self.length) * self.pixel + m, (i // self.length) * self.pixel + k)))
 
                         if len(local_pixel) == 3:   # 如果是RGB通道就增加A通道
                             local_pixel.append(255)
